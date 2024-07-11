@@ -1,0 +1,151 @@
+
+:root {
+    --naranja:#8b3d2b;
+    --blanco:#fbfbfb;
+    --negro:#000000;
+}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 62.5%rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blanco);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--naranja);
+    color: white;
+    font-family: "EB Garamond", serif;
+
+    width: 100%;
+    height: 6rem;
+    
+}
+
+.logo {
+    height: 120px;
+    margin-left: 1.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.centered-section {
+    height: 100vh;
+    text-align: center;
+
+
+    background-image: url('./assets/imgfondoprimeraseccion.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+    background: linear-gradient( bottom, transparent, white);
+
+}
+
+.centered-section h2 {
+
+    margin-top: 50vh;
+
+    font-size: 5rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 100;
+
+    color: var(--naranja);
+
+}
+
+
+.centered-section p {
+    font-size: 1.5rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 100;
+
+    color: var(--negro);
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+.horizontal-divs, .grid-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+.centered-section img, .horizontal-divs img {
+    display: block;
+    margin: 20px auto;
+}
+
+.centered-section img {
+    width: 3rem;
+    margin-bottom: 5rem;
+}
+.centered-section div {
+    width: 80%;
+    
+    margin: 0 auto;
+    background-color: var(--naranja);
+    height: 8px;
+    border-radius: 5px;
+}
+
+.horizontal-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    justify-items: center;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100px;
+    text-align: center;
+}
