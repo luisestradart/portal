@@ -98,17 +98,17 @@ nav a:hover {
 }
 
 .horizontal-divs {
-    margin: 20px 0;
     text-align: center;
 
 
 }
 
-.horizontal-divs h2 {
+.titulos-secciones {
     font-family: "EB Garamond", serif;
     font-weight: 100;
     color: var(--naranja);
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 3rem;
 
 }
 
@@ -116,7 +116,7 @@ nav a:hover {
 .horizontal-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 3rem;
 
     margin-top: 2rem;
 }
@@ -138,16 +138,20 @@ nav a:hover {
 
 
 .box h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "EB Garamond", serif;
     color: var(--blanco);
+
+    font-weight: 100;
+
 }
 
 .box p {
     font-weight: 100;
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    
+    margin-bottom: 3rem;
+
+    font-size: 1rem;    
 }
 
 
@@ -161,7 +165,6 @@ nav a:hover {
 .btn {
     display: inline-block;
     padding: 15px 25px;
-    font-size: 20px;
     color: var(--naranja);
     border: none;
     border-radius: 5px;
@@ -172,31 +175,30 @@ nav a:hover {
     height:auto;
     background-color: var(--blanco);
     margin-top: 1rem;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-
-
-
-.grid-section {
-    margin: 20px 0;
-    text-align: center;
+    font-size: 1rem;    
 
 }
 
 
-.centered-section img, .horizontal-divs img {
-    display: block;
-    margin: 20px auto;
+
+.horizontal-divs img {
+    width: 40%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
 }
+
+
+
+
 
 .centered-section img {
     width: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
+
+
 .centered-section div {
     width: 80%;
     
@@ -208,18 +210,282 @@ nav a:hover {
 
 
 
+
+.grid-section {
+    text-align: center;
+
+    width: 100%;
+    height: auto;
+}
+
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
-    gap: 10px;
     justify-items: center;
+  
 }
 
-.grid-item {
+.grid-container div {
+
+    width: 100%;
+}
+
+.grid-item-img {
     background-color: #f0f0f0;
+    text-align: center;
+
+    height: 30rem;
+}
+
+.mision {
+    background-image: url("./assets/mision_01.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+
+}
+
+.vision {
+    background-image: url('./assets/vision_01.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+
+}
+
+.objetivos {
+    background-image: url('./assets/objetivos_01.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+
+}
+
+.grid-item-txt {
     padding: 20px;
-    border: 1px solid #ccc;
     width: 100px;
     text-align: center;
+
+    width: 80%;
+    height: auto;
+    background-image: url('./'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+
+    margin-left: 2rem;
+
 }
+
+
+.grid-item-txt h2 {
+
+    width: 100px;
+
+    height: 30rem;
+
+    
+    font-size: 3rem;
+    font-family: "EB Garamond", serif;
+    color: var(--naranja);
+
+    font-weight: 100;
+
+
+
+    width: 80%;
+    height: auto;
+    background-image: url('./'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+
+}
+
+.grid-item-txt p {
+    font-weight: 100;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+
+    width: 70%;
+    
+}
+
+
+/* NORMATIVA */
+
+
+.normativa-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+
+    height: 30rem;
+}
+
+.normativa-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+
+    margin-left: 5rem;
+   
+
+}
+
+.normativa-text h2 {
+    width: 100%;
+    font-family: "EB Garamond", serif;
+    font-weight: 100;
+    font-size: 3rem;
+    color: var(--naranja);
+
+}
+
+.normativa-txt p {
+    font-family: "EB Garamond", serif;
+    font-weight: 100;
+    font-size: 1rem;
+
+}
+
+.normativa-botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+ 
+}
+
+.normativa-botones p {
+    margin-bottom: 10px;
+}
+
+
+.normativa-botones button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.normativa-botones button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 1rem;
+
+    box-shadow: 10px 10px 0px 0px #000;
+    background-color: var(--naranja);
+
+    margin: 5px 0;
+
+    margin-top: 1rem;
+
+}
+
+.segunda {
+    margin-top: 3rem;
+    height: 40rem;
+}
+
+
+
+/*estancias posdoctorales*/
+
+
+
+.normativa-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+
+    height: 30rem;
+}
+
+.normativa-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+
+    margin-left: 5rem;
+   
+
+}
+
+.normativa-text h2 {
+    width: 100%;
+    font-family: "EB Garamond", serif;
+    font-weight: 100;
+    font-size: 3rem;
+    color: var(--naranja);
+
+}
+
+.normativa-txt p {
+    font-family: "EB Garamond", serif;
+    font-weight: 100;
+    font-size: 1rem;
+
+}
+
+.normativa-botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+ 
+}
+
+.normativa-botones p {
+    margin-bottom: 10px;
+}
+
+
+.normativa-botones button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.normativa-botones button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 1rem;
+
+    box-shadow: 10px 10px 0px 0px #000;
+    background-color: var(--naranja);
+
+    margin: 5px 0;
+
+    margin-top: 1rem;
+
+}
+
