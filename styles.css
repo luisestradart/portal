@@ -15,8 +15,6 @@
 }
 
 body {
-    font-family: "EB Garamond", serif;
-
     margin: 0;
     padding: 0;
     display: flex;
@@ -24,19 +22,20 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--blanco);
+    font-family: "EB Garamond", serif;
 }
 
+
 header {
+    width: 100%;
+    height: 6rem;
+
+    background-color: var(--naranja);
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: var(--naranja);
-    color: white;
-
-    width: 100%;
-    height: 6rem;
-    
 }
 
 .logo {
@@ -50,9 +49,9 @@ nav {
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
     font-size: 1.5rem;
+    color: var(--blanco);
+    text-decoration: none;  
 }
 
 nav a:hover {
@@ -63,28 +62,20 @@ nav a:hover {
     height: 100vh;
     text-align: center;
 
-
-    background-image: url('./assets/imgfondoprimeraseccion.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-
-    background: linear-gradient( bottom, transparent, white);
-
+    background-image: url('./assets/imgfondoprimeraseccion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(bottom, transparent, white);
 }
 
 .centered-section h2 {
-
     margin-top: 50vh;
-
     font-size: 5rem;
     font-family: "EB Garamond", serif;
     font-weight: 100;
-
     color: var(--naranja);
-
 }
-
 
 .centered-section p {
     font-size: 1.5rem;
@@ -97,100 +88,77 @@ nav a:hover {
     margin: 0 auto;
 }
 
+/*SERVICIOS INICIALES*/
+
 .horizontal-divs {
     text-align: center;
-
-
 }
 
 .titulos-secciones {
+    font-size: 3rem;
     font-family: "EB Garamond", serif;
     font-weight: 100;
     color: var(--naranja);
-    font-size: 3rem;
     margin-bottom: 3rem;
-
 }
-
 
 .horizontal-container {
     display: flex;
     justify-content: center;
     gap: 3rem;
-
     margin-top: 2rem;
 }
 
-
 .box {
-    background-color: var(--naranja);
-    padding: 20px;
     width: 20rem;
     height: 24rem;
-
+    padding: 20px;
+    background-color: var(--naranja);
+    color: var(--blanco);
     text-align: center;
     border-radius: 1rem;
-
-    color: var(--blanco);
-
     box-shadow: 10px 10px 0px 0px #000;
 }
-
 
 .box h2 {
     font-size: 1.5rem;
     font-family: "EB Garamond", serif;
-    color: var(--blanco);
-
     font-weight: 100;
-
+    color: var(--blanco);
+}
+.horizontal-divs img {
+    width: 40%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .box p {
-    font-weight: 100;
+    font-size: 1rem;    
     margin-top: 1rem;
     margin-bottom: 3rem;
-
-    font-size: 1rem;    
+    font-weight: 100;
 }
-
-
-.container {
-    align-items: flex-end;
-
-}
-
-
 
 .btn {
-    display: inline-block;
+    width: 100%;
+    height: auto;
     padding: 15px 25px;
+    font-size: 1rem;    
     color: var(--naranja);
+    background-color: var(--blanco);
+
+    display: inline-block;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
 
-    width: 100%;
-    height:auto;
-    background-color: var(--blanco);
     margin-top: 1rem;
-    font-size: 1rem;    
-
 }
 
-
-
-.horizontal-divs img {
-    width: 40%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-
+.container {
+    align-items: flex-end;
 }
-
-
-
-
 
 .centered-section img {
     width: 3rem;
@@ -198,138 +166,109 @@ nav a:hover {
     margin-top: 2rem;
 }
 
-
 .centered-section div {
     width: 80%;
-    
-    margin: 0 auto;
-    background-color: var(--naranja);
     height: 8px;
+    margin: 0 auto;
     border-radius: 5px;
+    background-color: var(--naranja);
 }
-
-
-
 
 .grid-section {
-    text-align: center;
-
     width: 100%;
     height: auto;
+    text-align: center;
 }
-
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     justify-items: center;
-  
 }
 
 .grid-container div {
-
     width: 100%;
 }
 
 .grid-item-img {
+    height: 30rem;
     background-color: #f0f0f0;
     text-align: center;
-
-    height: 30rem;
 }
 
 .mision {
     background-image: url("./assets/mision_01.jpg");
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .vision {
-    background-image: url('./assets/vision_01.jpg'); 
-    background-size: cover; 
-    background-position: center; 
+    background-image: url('./assets/vision_01.jpg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+}
+
+.vision--responsive {
+    background-image: url('./assets/vision_01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    }
+
+.none--desktop {
+    display: none;
 
 }
 
 .objetivos {
-    background-image: url('./assets/objetivos_01.jpg'); 
-    background-size: cover; 
-    background-position: center; 
+    background-image: url('./assets/objetivos_01.jpg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .grid-item-txt {
-    padding: 20px;
-    width: 100px;
-    text-align: center;
-
     width: 80%;
     height: auto;
+    padding: 20px;
+    margin-left: 2rem;
     background-image: url('./'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
-
     text-align: left; 
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
     justify-content: center;
-
-    margin-left: 2rem;
-
 }
 
-
 .grid-item-txt h2 {
-
-    width: 100px;
-
-    height: 30rem;
-
-    
-    font-size: 3rem;
-    font-family: "EB Garamond", serif;
-    color: var(--naranja);
-
-    font-weight: 100;
-
-
-
     width: 80%;
     height: auto;
-    background-image: url('./'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-
+    font-size: 3rem;
+    color: var(--naranja);
+    font-family: "EB Garamond", serif;
+    font-weight: 100;
 }
 
 .grid-item-txt p {
-    font-weight: 100;
+    width: 70%;
     margin-top: 1rem;
     margin-bottom: 3rem;
     font-size: 1.2rem;
-
-    width: 70%;
-    
+    font-weight: 100;
 }
-
-
-/* NORMATIVA */
-
 
 .normativa-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
     gap: 20px;
-
     height: 30rem;
 }
 
@@ -339,26 +278,20 @@ nav a:hover {
     justify-content: center;
     align-items: flex-start;
     text-align: justify;
-
     margin-left: 5rem;
-   
-
 }
 
 .normativa-text h2 {
-    width: 100%;
     font-family: "EB Garamond", serif;
     font-weight: 100;
     font-size: 3rem;
     color: var(--naranja);
-
 }
 
 .normativa-txt p {
     font-family: "EB Garamond", serif;
     font-weight: 100;
     font-size: 1rem;
-
 }
 
 .normativa-botones {
@@ -367,125 +300,48 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-
-
- 
 }
 
 .normativa-botones p {
     margin-bottom: 10px;
 }
 
+.normativa-botones button {
+    width: 20rem;
+    height: 4rem;
+    padding: 10px 20px;
+    margin: 5px 0;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 0px 0px #000;
+    background-color: var(--naranja);
+    color: white;
+    cursor: pointer;
+}
 
 .normativa-botones button a {
     text-decoration: none;
     color: inherit;
-}
-
-.normativa-botones button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    width: 20rem;
-    height: 4rem;
-    border-radius: 1rem;
-
-    box-shadow: 10px 10px 0px 0px #000;
-    background-color: var(--naranja);
-
-    margin: 5px 0;
-
-    margin-top: 1rem;
-
 }
 
 .segunda {
     margin-top: 3rem;
-    height: 40rem;
-}
-
-
-
-/*estancias posdoctorales*/
-
-
-
-.normativa-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px;
-    gap: 20px;
-
     height: 30rem;
 }
 
-.normativa-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: justify;
-
-    margin-left: 5rem;
-   
-
-}
-
-.normativa-text h2 {
-    width: 100%;
-    font-family: "EB Garamond", serif;
-    font-weight: 100;
-    font-size: 3rem;
-    color: var(--naranja);
-
-}
-
-.normativa-txt p {
-    font-family: "EB Garamond", serif;
-    font-weight: 100;
-    font-size: 1rem;
-
-}
-
-.normativa-botones {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-
- 
-}
-
-.normativa-botones p {
-    margin-bottom: 10px;
-}
-
-
-.normativa-botones button a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.normativa-botones button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    width: 20rem;
-    height: 4rem;
-    border-radius: 1rem;
-
-    box-shadow: 10px 10px 0px 0px #000;
+footer {
+    width: 80%;
+    height: 5rem;
+    padding: 2rem;
     background-color: var(--naranja);
-
-    margin: 5px 0;
-
-    margin-top: 1rem;
-
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
+footer p {
+    font-size: 14px;
+    color: var(--blanco);
+    margin: 0;
+}

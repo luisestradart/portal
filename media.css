@@ -1,0 +1,572 @@
+/*
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 10px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header img {
+        height: 3rem;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    header a {
+        font-size: 1.2rem;
+    }
+    .logo {
+        height: 90px;
+        margin-left: 1rem;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .centered-section h2 {
+        margin-top: 40vh;
+        font-size: 4rem;
+    }
+    .centered-section p {
+        font-size: 1.2rem;
+    }
+
+    .titulos-secciones {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .horizontal-container {
+        gap: 2rem;
+    }
+
+    .box {
+        width: 15rem;
+        height: 18rem;
+        padding: 15px;
+    }
+    .box h2 {
+        font-size: 1.3rem;
+    }
+
+    .horizontal-divs img {
+        width: 50%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .box p {
+        font-size: 0.9rem;    
+        margin-top: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;    
+    }
+    .centered-section img {
+        width: 2.5rem;
+        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .centered-section div {
+        width: 70%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .grid-item-img {
+        height: 20rem;
+    }
+    .grid-item-txt {
+        width: 90%;
+        padding: 15px;
+        margin-left: 1rem;
+    }
+
+    .grid-item-txt h2 {
+        font-size: 2.5rem;
+    }
+
+    .grid-item-txt p {
+        font-size: 1rem;
+    }
+
+    .normativa-section {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .normativa-text {
+        margin-left: 2rem;
+    }
+
+    .normativa-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .normativa-txt p {
+        font-size: 0.9rem;
+    }
+
+    .normativa-botones button {
+        width: 15rem;
+        height: 3.5rem;
+        padding: 8px 16px;
+    }
+    .normativa-section {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .normativa-text {
+        margin-left: 2rem;
+    }
+
+    .normativa-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .normativa-txt p {
+        font-size: 0.9rem;
+    }
+
+    .normativa-botones button {
+        width: 15rem;
+        height: 3rem;
+    }
+    footer {
+        width: 90%;
+        height: auto;
+        padding: 1.5rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}
+
+*/
+
+@media (max-width: 1000px) {
+
+    .none {
+        display: none;
+        
+    }
+
+    .none--desktop {
+        display: block;
+    }
+
+    .visible {
+        visibility: visible;
+    }
+
+
+    header {
+        padding: 5px;
+        height: 4rem;
+    }
+
+  
+    header nav {
+        gap: 0.3rem;
+    }
+
+    header a {
+        font-size: 1rem;
+
+    }
+    .logo {
+        height: 70px;
+        margin-left: 1rem;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+ /*SENCCION INICIAL*/
+
+    .centered-section {
+        height: 50rem;
+
+        background-image: url('./assets/imgfondoprimeraseccionmobile.jpg');
+        
+    }
+
+    .centered-section h2 {
+        margin-top: 45vh;
+        font-size: 3rem;
+    }
+    .centered-section p {
+        font-size: 1rem;
+    }
+
+    .titulos-secciones {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /*SERVICIOS INICIALES*/
+
+
+    .horizontal-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .box {
+        width: 15rem;
+        height: 17rem;
+        padding: 10px;
+    }
+    .box h2 {
+        font-size: 1.2rem;
+    }
+
+    .horizontal-divs {
+        height: 87rem;
+        margin-top: 5rem;
+    }
+
+    .horizontal-divs img {
+        width: 80%;
+        margin-top: 7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .box p {
+        font-size: 0.8rem;    
+        margin-top: 0.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.8rem;    
+    }
+    .centered-section img {
+        width: 2rem;
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .centered-section div {
+        width: 60%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .grid-item-img {
+        height: 15rem;
+    }
+    .grid-item-txt {
+        width: 95%;
+        margin: 0;
+    }
+
+    .grid-item-txt h2 {
+        font-size: 2rem;
+    }
+
+    .grid-item-txt p {
+        font-size: 0.9rem;
+        margin-bottom: 4rem;
+
+    }
+
+    .grid-item-txt h2, p {
+        margin-left: 3rem;
+        margin-top: 3rem;
+    }
+
+    /*NOMATIVA Y ESTANCIAS POSDOCTORALES*/
+
+    .normativa-section {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        height: auto;
+    }
+    .normativa-text {
+        margin-left: 3rem;
+    }
+
+    .normativa-text h2 {
+        font-size: 2rem;
+        width: 80%;
+        margin-left: 1rem;
+    }
+
+    .normativa-text p {
+        font-size: 1rem;
+        width: 80%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .normativa-botones {
+        margin-top: 2rem;
+    }
+
+    .normativa-botones button {
+        width: 80%;
+        height: 5rem;
+        padding: 6px 12px;
+      
+    }
+
+        
+    .segunda {
+        
+        height: 70rem;
+    }
+
+    .partedos {
+        height: 20rem;
+
+    }
+
+    /*ESTANCIAS*/
+
+    .estancias {
+        margin-top: 5rem;
+    }
+    
+   /* 
+    .normativa-section {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .normativa-text {
+        margin-left: 1rem;
+    }
+
+    .normativa-text h2 {
+        font-size: 2rem;
+    }
+
+    .normativa-txt p {
+        font-size: 0.8rem;
+    }
+
+    .normativa-botones button {
+        width: 12rem;
+        height: 2.5rem;
+    }
+
+    */
+    footer {
+        width: 95%;
+        height: auto;
+        padding: 1rem;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        margin-top: 5rem;
+    }
+
+    footer p {
+        font-size: 1rem; /* Ajustado de 14px a rem */
+    }
+}
+
+/*
+
+@media (max-width: 300px) {
+    header {
+        padding: 3px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        height: 2rem;
+    }
+
+    header nav {
+        gap: 0.2rem;
+    }
+
+    header a {
+        font-size: 0.8rem;
+    }
+    .logo {
+        height: 50px;
+        margin-left: 0.2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    .centered-section h2 {
+        margin-top: 20vh;
+        font-size: 2.5rem;
+    }
+    .centered-section p {
+        font-size: 0.8rem;
+    }
+
+    .titulos-secciones {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .horizontal-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .box {
+        width: 10rem;
+        height: 12rem;
+        padding: 8px;
+    }
+    .box h2 {
+        font-size: 1rem;
+    }
+
+    .horizontal-divs img {
+        width: 70%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .box p {
+        font-size: 0.7rem;    
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.7rem;    
+    }
+    .centered-section img {
+        width: 1.5rem;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .centered-section div {
+        width: 50%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, auto);
+    }
+
+    .grid-item-img {
+        height: 10rem;
+    }
+    .grid-item-txt {
+        width: 100%;
+        padding: 5px;
+        margin-left: 0;
+    }
+
+    .grid-item-txt h2 {
+        font-size: 1.5rem;
+    }
+
+    .grid-item-txt p {
+        font-size: 0.8rem;
+    }
+
+    .normativa-section {
+        grid-template-columns: 1fr;
+        padding: 5px;
+        gap: 5px;
+        height: auto;
+    }
+    .normativa-text {
+        margin-left: 0.5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .normativa-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .normativa-txt p {
+        font-size: 0.7rem;
+    }
+
+    .normativa-botones button {
+        width: 10rem;
+        height: 2.5rem;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    .normativa-section {
+        padding: 3px;
+        gap: 3px;
+    }
+
+    .normativa-text {
+        margin-left: 0.5rem;
+    }
+
+    .normativa-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .normativa-txt p {
+        font-size: 0.7rem;
+    }
+
+    .normativa-botones button {
+        width: 10rem;
+        height: 2rem;
+    }
+     footer {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    footer p {
+        font-size: 0.8rem; 
+    }
+}
+
+*/
